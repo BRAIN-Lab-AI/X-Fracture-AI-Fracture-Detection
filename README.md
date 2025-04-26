@@ -27,15 +27,13 @@ Bone fractures are a common medical condition that needs to be diagnosed quickly
 ## Project Technicalities
 
 ### Terminologies
-- **Mobilg:** A generative model that progressively transforms random noise into coherent data.
+- **MobLG-Net :** A generative model that progressively transforms random noise into coherent data.
 
 ### Problem Statements
-- **Problem 1:** Achieving high-resolution and detailed images using conventional diffusion models remains challenging.
-- **Problem 2:** Existing models suffer from slow inference times during the image generation process.
-- **Problem 3:** There is limited capability in performing style transfer and generating diverse artistic variations.
-
+- **Problem 1:** lack the consistency required for high-accuracy detection
+- **Problem 2:** overfitting on small datasets, poor generalization, and high computational requirements that prevent real-time deployment
 ### Loopholes or Research Areas
-- **testing results:** needs to propose a good archatuhure 
+- **Testing Results:** low results.
 - **Computational Resources:** Training requires GPU compute resources, which may not be readily accessible.
 
 ### Problem vs. Ideation: Proposed 3 Ideas to Solve the Problems
