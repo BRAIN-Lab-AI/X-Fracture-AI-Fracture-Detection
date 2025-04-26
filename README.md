@@ -28,16 +28,7 @@ Enhanced Stable Diffusion is a cutting-edge deep learning project that redefines
 ## Project Technicalities
 
 ### Terminologies
-- **Diffusion Model:** A generative model that progressively transforms random noise into coherent data.
-- **Latent Space:** A compressed, abstract representation of data where complex features are captured.
-- **UNet Architecture:** A neural network with an encoder-decoder structure featuring skip connections for better feature preservation.
-- **Text Encoder:** A model that converts text into numerical embeddings for downstream tasks.
-- **Perceptual Loss:** A loss function that measures high-level differences between images, emphasizing perceptual similarity.
-- **Tokenization:** The process of breaking down text into smaller units (tokens) for processing.
-- **Noise Vector:** A randomly generated vector used to initialize the diffusion process in generative models.
-- **Decoder:** A network component that transforms latent representations back into image space.
-- **Iterative Refinement:** The process of gradually improving the quality of generated data through multiple steps.
-- **Conditional Generation:** The process where outputs are generated based on auxiliary inputs, such as textual descriptions.
+- **Mobilg:** A generative model that progressively transforms random noise into coherent data.
 
 ### Problem Statements
 - **Problem 1:** Achieving high-resolution and detailed images using conventional diffusion models remains challenging.
@@ -45,9 +36,8 @@ Enhanced Stable Diffusion is a cutting-edge deep learning project that redefines
 - **Problem 3:** There is limited capability in performing style transfer and generating diverse artistic variations.
 
 ### Loopholes or Research Areas
-- **Evaluation Metrics:** Lack of robust metrics to effectively assess the quality of generated images.
-- **Output Consistency:** Inconsistencies in output quality when scaling the model to higher resolutions.
-- **Computational Resources:** Training requires significant GPU compute resources, which may not be readily accessible.
+- **dataset:** didn't test val folder.
+- **Computational Resources:** Training requires GPU compute resources, which may not be readily accessible.
 
 ### Problem vs. Ideation: Proposed 3 Ideas to Solve the Problems
 1. **Optimized Architecture:** Redesign the model architecture to improve efficiency and balance image quality with faster inference.
@@ -62,10 +52,10 @@ This repository provides an implementation of the enhanced stable diffusion mode
 - **Optimized Training Loop:** Reduces computational overhead while maintaining performance.
 
 ### Key Components
-- **`model.py`**: Contains the modified UNet architecture and other model components.
-- **`train.py`**: Script to handle the training process with configurable parameters.
-- **`utils.py`**: Utility functions for data processing, augmentation, and metric evaluations.
-- **`inference.py`**: Script for generating images using the trained model.
+- **`Experiments_Novel_Transfer_Learning_Based_Bone_Fracture_Detection_Using_Radiographic_Images.ipnyb`**: Contains the code from paper.
+- **`project testing.ipnyb`**: see what happens after changes in above
+- **`Fracture_Detection_CNN_ResNet,DenseNet,MobileNet.ipnyb`**: another code for same data which doesn't freeze layer.
+- **`enhanced Fracture_Detection_CNN_ResNet,DenseNet,MobileNet.ipnyb.ipnyb`**: freeze layer
 
 ## Model Workflow
 The workflow of the Enhanced Stable Diffusion model is designed to translate textual descriptions into high-quality artistic images through a multi-step diffusion process:
