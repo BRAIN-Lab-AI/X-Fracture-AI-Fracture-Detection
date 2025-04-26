@@ -3,16 +3,15 @@
 
 
 Below is a template for another sample project. Please follow this template.
-# [Deep Learning Project Template] Enhanced Stable Diffusion: A Deep Learning Approach for Artistic Image Generation
+# [DL] X-Fracture: AI Fracture Detection
 
 ## Introduction
-Enhanced Stable Diffusion is a cutting-edge deep learning project that redefines artistic image generation by leveraging an advanced diffusion process to convert textual descriptions into high-quality images. By integrating a modified UNet architecture with innovative loss functions and enhanced data augmentation strategies, the model iteratively refines a latent noise vector conditioned on text embeddings to produce detailed and visually compelling artwork. This approach not only addresses common challenges such as slow inference times and output inconsistencies found in traditional diffusion models, but also pushes the boundaries of creative image synthesis, paving the way for novel applications in art, design, and multimedia content creation.
-
+Bone fractures are a common medical condition that needs to be diagnosed quickly and accurately in order to be treated effectively. Using radiological images, this project investigates the use of deep learning, part of AI, for the binary classification problem of bone fracture detection. Building on pre-existing convolutional neural networks (CNNs), the model uses architectural improvements to increase classification accuracy while cutting down on training time and cost. The outcomes show significant gains over the use of basic machine learning (ML) or Deep Learning(DL) techniques alone.
 ## Project Metadata
 ### Authors
-- **Team:** Mohammad Ahmad, Umar Abdullah and Malik Hussain
+- **Team:** Ahmed Baabdullah
 - **Supervisor Name:** Dr. Muzammil Behzad
-- **Affiliations:** SABIC, ARAMCO and KFUPM
+- **Affiliations:** KFUPM
 
 ### Project Documents
 - **Presentation:** [Project Presentation](/presentation.pptx)
@@ -22,7 +21,7 @@ Enhanced Stable Diffusion is a cutting-edge deep learning project that redefines
 - [High-Resolution Image Synthesis with Latent Diffusion Models](https://arxiv.org/abs/2112.10752)
 
 ### Reference Dataset
-- [LAION-5B Dataset](https://laion.ai/blog/laion-5b/)
+- [Fracture detection using x-ray images](https://www.kaggle.com/datasets/devbatrax/fracture-detection-using-x-ray-images/)
 
 
 ## Project Technicalities
@@ -36,16 +35,14 @@ Enhanced Stable Diffusion is a cutting-edge deep learning project that redefines
 - **Problem 3:** There is limited capability in performing style transfer and generating diverse artistic variations.
 
 ### Loopholes or Research Areas
-- **dataset:** didn't test val folder.
+- **testing results:** needs to propose a good archatuhure 
 - **Computational Resources:** Training requires GPU compute resources, which may not be readily accessible.
 
 ### Problem vs. Ideation: Proposed 3 Ideas to Solve the Problems
 1. **Optimized Architecture:** Redesign the model architecture to improve efficiency and balance image quality with faster inference.
-2. **Advanced Loss Functions:** Integrate novel loss functions (e.g., perceptual loss) to better capture artistic nuances and structural details.
-3. **Enhanced Data Augmentation:** Implement sophisticated data augmentation strategies to improve the model’s robustness and reduce overfitting.
 
 ### Proposed Solution: Code-Based Implementation
-This repository provides an implementation of the enhanced stable diffusion model using PyTorch. The solution includes:
+This repository provides an implementation of the code. The solution includes:
 
 - **Modified UNet Architecture:** Incorporates residual connections and efficient convolutional blocks.
 - **Novel Loss Functions:** Combines Mean Squared Error (MSE) with perceptual loss to enhance feature learning.
@@ -61,17 +58,14 @@ This repository provides an implementation of the enhanced stable diffusion mode
 The workflow of the Enhanced Stable Diffusion model is designed to translate textual descriptions into high-quality artistic images through a multi-step diffusion process:
 
 1. **Input:**
-   - **Text Prompt:** The model takes a text prompt (e.g., "A surreal landscape with mountains and rivers") as the primary input.
-   - **Tokenization:** The text prompt is tokenized and processed through a text encoder (such as a CLIP model) to obtain meaningful embeddings.
-   - **Latent Noise:** A random latent noise vector is generated to initialize the diffusion process, which is then conditioned on the text embeddings.
+   - **Data:** The model reads the train folder.
 
-2. **Diffusion Process:**
-   - **Iterative Refinement:** The conditioned latent vector is fed into a modified UNet architecture. The model iteratively refines this vector by reversing a diffusion process, gradually reducing noise while preserving the text-conditioned features.
-   - **Intermediate States:** At each step, intermediate latent representations are produced that increasingly capture the structure and details dictated by the text prompt.
+2. **training & setp:**
+   - **models:** define the models then train them
 
 3. **Output:**
    - **Decoding:** The final refined latent representation is passed through a decoder (often part of a Variational Autoencoder setup) to generate the final image.
-   - **Generated Image:** The output is a synthesized image that visually represents the input text prompt, complete with artistic style and detail.
+   - **results :**show different training, val and testing accruacy 
 
 ## How to Run the Code
 
@@ -103,7 +97,6 @@ The workflow of the Enhanced Stable Diffusion model is designed to translate tex
 
 ## Acknowledgments
 - **Open-Source Communities:** Thanks to the contributors of PyTorch, Hugging Face, and other libraries for their amazing work.
-- **Individuals:** Special thanks to bla, bla, bla for the amazing team effort, invaluable guidance and support throughout this project.
-- **Resource Providers:** Gratitude to ABC-organization for providing the computational resources necessary for this project.
+ **Resource Providers:** Gratitude to google colab for providing the computational resources necessary for this project.
 
 
