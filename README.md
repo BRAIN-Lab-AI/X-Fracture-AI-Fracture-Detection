@@ -18,7 +18,7 @@ Bone fractures are a common medical condition that needs to be diagnosed quickly
 - **Report:** [Project Report](/report.pdf)
 
 ### Reference Paper
-- [High-Resolution Image Synthesis with Latent Diffusion Models](https://arxiv.org/abs/2112.10752)
+- [Novel transfer learning based bone fracture detection using radiographic images](https://bmcmedimaging.biomedcentral.com/articles/10.1186/s12880-024-01546-4)
 
 ### Reference Dataset
 - [Fracture detection using x-ray images](https://www.kaggle.com/datasets/devbatrax/fracture-detection-using-x-ray-images/)
